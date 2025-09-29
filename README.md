@@ -52,18 +52,18 @@ It is suited for users who want an automated system that can draft, revise, and 
    git clone https://github.com/daanyal-23/BlogAgentic.git
    cd BlogAgentic
    ```
-2.**Create a virtual environment (recommended)**
+2. **Create a virtual environment (recommended)**
    ```sh
    python3 -m venv venv
    source venv/bin/activate   # macOS / Linux  
    or
    venv\Scripts\activate      # Windows
    ```
-3.**Install dependencies**
+3. **Install dependencies**
    ```sh
    pip install -r requirements.txt
    ```
-4.**Set up environment / API keys**
+4. **Set up environment / API keys**
 
 ## Usage
 
@@ -121,4 +121,5 @@ Thank you for considering contributing! While this is your personal project, her
 -Follow consistent coding style (PEP8 / black / isort).
 
 -Document new functionality in README or inline comments.
+
 
