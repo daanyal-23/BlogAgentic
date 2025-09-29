@@ -37,8 +37,8 @@ It is suited for users who want an automated system that can draft, revise, and 
 
 ## Architecture & Components
 
-- **LangChain**: Provides the abstraction for interacting with language models, prompt templating, tool execution, etc. :contentReference[oaicite:0]{index=0}  
-- **LangGraph**: Orchestration framework on top of LangChain for defining directed workflows, handling state, branching, loops, and coordinating agents. :contentReference[oaicite:1]{index=1}  
+- **LangChain**: Provides the abstraction for interacting with language models, prompt templating, tool execution, etc. 
+- **LangGraph**: Orchestration framework on top of LangChain for defining directed workflows, handling state, branching, loops, and coordinating agents. 
 - **Agent Nodes / Workflow Graph**: The core logic is split into nodes (e.g. generation, revision, etc.) and edges that control transitions.  
 - **State Management**: The application retains context across steps, enabling more coherent multi-step operations.  
 - **Entry point**: `app.py`  set up and run the agentic workflows.  
@@ -52,18 +52,18 @@ It is suited for users who want an automated system that can draft, revise, and 
    git clone https://github.com/daanyal-23/BlogAgentic.git
    cd BlogAgentic
    ```
-2.Create a virtual environment (recommended)
-```sh
+2.**Create a virtual environment (recommended)**
+   ```sh
    python3 -m venv venv
    source venv/bin/activate   # macOS / Linux  
    or
    venv\Scripts\activate      # Windows
-  ```
-3.Install dependencies
-```sh
+   ```
+3.**Install dependencies**
+   ```sh
    pip install -r requirements.txt
-  ```
-4.Set up environment / API keys
+   ```
+4.**Set up environment / API keys**
 
 ## Usage
 
@@ -92,17 +92,17 @@ You may also pass specific prompts or parameters via CLI or modify the workflow 
 
 Here’s a short explanation of key files:
 
-app.py / main.py – Where the agentic workflows are initialized and executed.
+-app.py / main.py – Where the agentic workflows are initialized and executed.
 
-langgraph.json – Defines the graph structure (nodes, edges, states) used by LangGraph.
+-langgraph.json – Defines the graph structure (nodes, edges, states) used by LangGraph.
 
-src/ – Contains modular code for agent logic, utility functions, etc.
+-src/ – Contains modular code for agent logic, utility functions, etc.
 
-requirements.txt – All Python dependencies required by the project.
+-requirements.txt – All Python dependencies required by the project.
 
-pyproject.toml – Metadata and build configuration.
+-pyproject.toml – Metadata and build configuration.
 
-uv.lock – Lock file.
+-uv.lock – Lock file.
 
 ## Requirements & Dependencies
 -Python (version as specified in .python-version)
@@ -114,10 +114,11 @@ uv.lock – Lock file.
 ## Contributing
 Thank you for considering contributing! While this is your personal project, here are some tips if you wish to grow it:
 
-Fork the repo and work on feature branches.
+-Fork the repo and work on feature branches.
 
-Maintain tests (if you add them) and ensure existing functionality isn’t broken.
+-Maintain tests (if you add them) and ensure existing functionality isn’t broken.
 
-Follow consistent coding style (PEP8 / black / isort).
+-Follow consistent coding style (PEP8 / black / isort).
 
-Document new functionality in README or inline comments.
+-Document new functionality in README or inline comments.
+
