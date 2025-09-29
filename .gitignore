@@ -1,0 +1,46 @@
+# ----------------------
+# Python bytecode / cache
+# ----------------------
+__pycache__/
+*.py[cod]
+
+# ----------------------
+# Virtual environment
+# ----------------------
+venv/
+.venv/
+
+# ----------------------
+# Build / packaging
+# ----------------------
+dist/
+build/
+*.egg-info/
+
+# ----------------------
+# Secrets / environment
+# ----------------------
+.env
+.env.local
+
+# ----------------------
+# Jupyter notebooks
+# ----------------------
+.ipynb_checkpoints/
+
+# ----------------------
+# VS Code settings
+# ----------------------
+.vscode/
+
+# ----------------------
+# OS-specific files
+# ----------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------
+# Logs & test cache
+# ----------------------
+*.log
+.pytest_cache/
