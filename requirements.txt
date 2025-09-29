@@ -1,0 +1,9 @@
+langchain
+langgraph>=0.2.56,<0.4.0
+langchain_community
+langchain_core
+langchain_groq
+fastapi
+uvicorn
+watchdog
+langgraph-cli[inmem]==0.1.54
