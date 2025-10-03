@@ -1,6 +1,6 @@
 # BlogAgentic
 
-Autonomously generate, edit, and draft blog content using LangGraph-powered agent workflows and LangChain LLMs.
+Autonomously generate, edit, and draft blog content using LangGraph-powered agent workflows and LangChain LLMs, now with support for multi-language blog generation (English, Hindi, and French).
 
 ---
 
@@ -20,18 +20,29 @@ Autonomously generate, edit, and draft blog content using LangGraph-powered agen
 
 ## About
 
-**BlogAgentic** is a Python application designed to autonomously handle blog content workflows. It uses **LangChain** as the foundation for interacting with LLMs, layered with **LangGraph** to orchestrate agentic flows—allowing for branching, stateful control and more advanced workflow logic.
+**BlogAgentic** is a Python application designed to autonomously handle end-to-end blog content workflows.
+It leverages LangChain for LLM interaction and LangGraph for orchestrating agentic flows, enabling stateful workflows, branching, and iterative editing loops.
 
-It is suited for users who want an automated system that can draft, revise, and iterate on blog posts with minimal manual prompting.
+The system can:
+
+-Generate initial drafts.
+
+-Revise and refine blog content.
+
+-Produce blogs in multiple languages (English, Hindi, and French) with minimal prompting.
+
+-This makes BlogAgentic ideal for users, teams, or organizations looking to automate    multilingual blog generation and editing.
 
 ---
 
 ## Features
 
 - Agentic workflows for content generation and revision  
-- Stateful orchestration via LangGraph (e.g. loops, branching)  
-- Integration with LLMs via LangChain  
-- Automated drafting and editing steps (as implemented)  
+- Stateful orchestration via LangGraph (e.g. loops, branching)
+- Multi-language support: generate blogs in English, Hindi, and French
+- Seamless integration with LLMs using LangChain
+- Automated drafting and editing steps (as implemented)
+- Customizable graph definition (langgraph.json) for extending workflows
 
 ---
 
@@ -39,7 +50,8 @@ It is suited for users who want an automated system that can draft, revise, and 
 
 - **LangChain**: Provides the abstraction for interacting with language models, prompt templating, tool execution, etc. 
 - **LangGraph**: Orchestration framework on top of LangChain for defining directed workflows, handling state, branching, loops, and coordinating agents. 
-- **Agent Nodes / Workflow Graph**: The core logic is split into nodes (e.g. generation, revision, etc.) and edges that control transitions.  
+- **Agent Nodes / Workflow Graph**: The core logic is split into nodes (e.g. generation, revision, etc.) and edges that control transitions.
+- **Multi-language capability**: Translation and generation nodes allow outputs in Hindi and French.
 - **State Management**: The application retains context across steps, enabling more coherent multi-step operations.  
 - **Entry point**: `app.py`  set up and run the agentic workflows.  
 
@@ -67,19 +79,19 @@ It is suited for users who want an automated system that can draft, revise, and 
 
 ## Usage
 
-Here is a basic usage example:
+Basic run:
 ```sh 
    python app.py
   ```
-Once running, the system will proceed through a workflow that generates and edits blog drafts using your configured LLM agentic logic.
+By default, the system will run through the defined workflow and generate/edit a blog draft.
 
-You may also pass specific prompts or parameters via CLI or modify the workflow graph as needed
+To specify language output (English, Hindi, French), update the workflow configuration or pass parameters accordingly.
 
 ## Project Structure
 
 ```sh
    BlogAgentic/
-    ├── src/                  # (If present) Supporting modules or agent components  
+    ├── src/                  # Supporting modules or agent components  
     ├── app.py                # Application entry point  
     ├── main.py               # Main orchestration runner  
     ├── langgraph.json        # Graph definition / configuration  
@@ -121,5 +133,6 @@ Thank you for considering contributing! While this is your personal project, her
 -Follow consistent coding style (PEP8 / black / isort).
 
 -Document new functionality in README or inline comments.
+
 
 
