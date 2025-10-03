@@ -44,3 +44,5 @@ Thumbs.db
 # ----------------------
 *.log
 .pytest_cache/
+.langgraph_api/
+request.json
